@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .allign {
+            border-radius: 50%;
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 6px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: -6px;
+            margin-bottom: 15px;
+            cursor: pointer;
+
+        }
+
+        .button-19 {
+            appearance: button;
+            background-color: #1899D6;
+            border: solid transparent;
+            border-radius: 16px;
+            border-width: 0 0 4px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: din-round, sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: .8px;
+            line-height: 20px;
+            margin: 0;
+            outline: none;
+            overflow: visible;
+            padding: 13px 16px;
+            text-align: center;
+            text-transform: uppercase;
+            touch-action: manipulation;
+            transform: translateZ(0);
+            transition: filter .2s;
+            user-select: none;
+            -webkit-user-select: none;
+            vertical-align: middle;
+            white-space: nowrap;
+            width: 100%;
+        }
+
+        .button-19:after {
+            background-clip: padding-box;
+            background-color: #1CB0F6;
+            border: solid transparent;
+            border-radius: 16px;
+            border-width: 0 0 4px;
+            bottom: -4px;
+            content: "";
+            left: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: -1;
+        }
+
+        .button-19:main,
+        .button-19:focus {
+            user-select: auto;
+        }
+
+        .button-19:hover:not(:disabled) {
+            filter: brightness(1.1);
+            -webkit-filter: brightness(1.1);
+        }
+
+        .button-19:disabled {
+            cursor: auto;
+        }
+
+        .button-19:active {
+            border-width: 4px 0 0;
+            background: none;
+        }
+
+
+        body {
+            font-family: 'Space Mono', monospace;
+            display: flex;
+            flex-direction: column;
+            max-width: 420px;
+            padding: 32px;
+            margin: 60px auto;
+            border: 1px solid #eee;
+            box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06);
+        }
+
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizelegibility;
+            letter-spacing: -0.25px;
+        }
+
+
+        li {
+            color: #4F4F4F;
+            padding-left: 16px;
+            margin-top: 24px;
+            position: relative;
+            font-size: 16px;
+            line-height: 20px;
+
+            &:before {
+                content: '';
+                display: block;
+                height: 42px;
+                width: 42px;
+                border-radius: 50%;
+                border: 2px solid #ddd;
+                position: absolute;
+                top: -12px;
+                left: -46px;
+            }
+        }
+
+        strong {
+            color: #292929;
+        }
+
+
+
+        .button-20 {
+            appearance: button;
+            background-color: #4D4AE8;
+            background-image: linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));
+            border: 1px solid #4D4AE8;
+            border-radius: 1rem;
+            box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset, rgba(46, 54, 80, 0.075) 0 1px 1px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Inter, sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.5;
+            margin: 0;
+            padding: .5rem 1rem;
+            text-align: center;
+            text-transform: none;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            vertical-align: middle;
+        }
+
+        .button-20:focus:not(:focus-visible),
+        .button-20:focus {
+
+            outline: 0;
+        }
+
+        .button-20:hover {
+            background-color: #3733E5;
+            border-color: #3733E5;
+        }
+
+        .button-20:focus {
+            background-color: #413FC5;
+            border-color: #3E3BBA;
+            box-shadow: rgba(255, 255, 255, 0.15) 0 1px 0 inset, rgba(46, 54, 80, 0.075) 0 1px 1px, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+        }
+
+        .button-20:active {
+            background-color: #3E3BBA;
+            background-image: none;
+            border-color: #3A38AE;
+            box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset;
+        }
+
+        .button-20:active:focus {
+            box-shadow: rgba(46, 54, 80, 0.125) 0 3px 5px inset, rgba(104, 101, 235, 0.5) 0 0 0 .2rem;
+        }
+
+        .button-20:disabled {
+            background-image: none;
+            box-shadow: none;
+            opacity: .65;
+            pointer-events: none;
+        }
+
+        .button-20 {
+            margin-bottom: 6px;
+        }
+
+        ol.alternating-colors {
+            li:nth-child(odd):before {
+                border-color: #0BAD02;
+            }
+
+            li:nth-child(even):before {
+                border-color: #2378D5;
+            }
+        }
+        .chat-image{
+           
+            margin-bottom: 12px;
+        }
+    </style>
+    <link rel="stylesheet" href="/css/dashboard.css" />
+</head>
+
+<body id="body">
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+
+<script src="/js/dashboard.js"></script>
+
+</html>
