@@ -15,11 +15,7 @@ const User = sequelize.define("User", {
     type: Sequelize.TEXT,
     allowNull: false,
   },
-//   imageUrl:{
-//     type:Sequelize.INTEGER,
-//     allowNull:false,
-// },
-  phonenumber: {
+ phonenumber: {
     type: Sequelize.BIGINT(10),
     unique: true,
     allowNull: false,

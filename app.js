@@ -20,6 +20,9 @@ const ChatHistory = require("./models/chat-history");
 const Groups = require("./models/groups");
 const GroupMember = require("./models/groupMembers");
 
+const cronService = require('./services/cron');
+cronService.job.start();
+
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
